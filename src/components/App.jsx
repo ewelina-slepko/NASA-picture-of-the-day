@@ -7,19 +7,33 @@ class App extends React.Component {
         date: "",
         photo: ""
     }
+    componentDidMount() {
+        fetch('https://api.nasa.gov/planetary/apod?api_key=nommR7P63QeVL4N768TjF0WYQHfvzFdeK5TS5pDB')
+            .then(response => response.json())
+            .then(json => this.setState({ photo: json }));
+    }
+
+    getPhoto = date => {
+        fetch(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=nommR7P63QeVL4N768TjF0WYQHfvzFdeK5TS5pDB`)
+            .then(response => response.json())
+            .then(json => this.setState({ photo: json }));
+    }
+
+
     render() {
         return (
             <div>
-                <h1>NASA API</h1>
                 <Form changeDate={this.changeDate} />
-                <Photo />
+                <Photo photo={this.state.photo} />
             </div>
         );
     }
 
     changeDate = e => {
         e.preventDefault();
-        console.log(e.target[0].value);
+        let inputDate = e.target[0].value;
+        this.setState({ date: inputDate })
+        this.getPhoto(inputDate);
     }
 }
 
