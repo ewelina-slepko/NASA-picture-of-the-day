@@ -1,10 +1,11 @@
 import React from "react";
+import Button from "./Button";
 
 const DateForm = props => (
 
     <form onSubmit={props.changeDate}>
         <input type="date" />
-        <button>Submit</button>
+        <Button>Submit</Button>
     </form>
 
 );
@@ -12,4 +13,3 @@ const DateForm = props => (
 
 
 export default DateForm;
-

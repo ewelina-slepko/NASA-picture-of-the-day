@@ -1,0 +1,15 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #132E32;
+    background-size: 210vh 105vh;
+    font-family: Consolas;
+}

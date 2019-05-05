@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Form from "./Form";
 import Photo from "./Photo";
+
 
 class App extends React.Component {
     state = {
