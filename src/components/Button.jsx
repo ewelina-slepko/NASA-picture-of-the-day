@@ -4,8 +4,9 @@ export default styled.button`
 
 color: #fff !important;
 text-transform: uppercase;
-background: #ed3330;
-padding: 20px;
+background: #960f0c;
+padding: 10px;
+margin: 5px;
 border-radius: 5px;
 display: inline-block;
 border: none;
