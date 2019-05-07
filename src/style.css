@@ -4,17 +4,17 @@
 
 html,
 body {
-    
-    height: 100%;
-    width: 100%;
-    margin: 0px;
-		padding: 0px;
+    margin: 0;
+		padding: 0;
+		width: 100%;
 		text-align: justify;
 }
 
 body {
 		background-color:#1d1d1b;
 		font-family: Moderat, sans-serif;
+		height: 100vh;
+		
 }
 
 img {

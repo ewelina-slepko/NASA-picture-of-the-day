@@ -1,7 +1,7 @@
 import React from "react";
 
 const Photo = props => (<div>
-
+    <div style={flex.field}></div>
     <div style={flex.container}>
 
         <div style={flex.imgColumn}> <img src={props.photo.url} alt={props.photo.title} /> </div>
@@ -28,6 +28,7 @@ const flex = {
     titleWrapper: {
         textAlign: 'center',
         color: '#fff',
+
     },
 
     imgColumn: {
@@ -35,7 +36,7 @@ const flex = {
         height: '40%',
         width: '40%',
         maxWidth: '50%',
-        padding: '20px 0px'
+        padding: '20px 0px',
 
     },
 
@@ -46,6 +47,9 @@ const flex = {
         margin: '0px 72px',
         padding: '0px 6px',
         color: '#5c6168'
+    },
+    field: {
+        height: '100vh'
     }
 }
 

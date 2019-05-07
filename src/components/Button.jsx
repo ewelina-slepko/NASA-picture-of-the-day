@@ -2,21 +2,60 @@ import styled from "styled-components";
 
 export default styled.button`
 
-color: #fff !important;
-text-transform: uppercase;
-background: #960f0c;
-padding: 10px;
-margin: 5px;
-border-radius: 5px;
-display: inline-block;
-border: none;
+background: none;
+color: #ccc;
+width: 240px;
+height: 70px;
+border: 1px solid #960f0c;
+font-size: 18px;
+border-radius: 4px;
+transition: .6s;
+overflow: hidden;
+
+&:focus{
+    outline: none;
+}
+
+&:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(255,255,255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+    }
+
+&:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter:blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
 
 &:hover{
-    background: #434343;
-    letter-spacing: 1px;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.4s ease 0s;
+    background: #960f0c;
+    coursor: pointer;
 }
+
+&:hover:after{
+    transform: translate(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+// 
+
+
 `;

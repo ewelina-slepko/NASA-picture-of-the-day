@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Input from "./Input";
+import Date from "./Date";
 import Photo from "./Photo";
 
 
@@ -24,7 +24,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Input changeDate={this.changeDate} />
+                <Date changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
             </div>
         );
