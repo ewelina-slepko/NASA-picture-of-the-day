@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Form from "./Form";
+import Input from "./Input";
 import Photo from "./Photo";
 
 
@@ -24,7 +24,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Form changeDate={this.changeDate} />
+                <Input changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
             </div>
         );

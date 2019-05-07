@@ -2,12 +2,12 @@ import React from "react";
 
 const Photo = props => (<div>
 
-    <div style={style.container}>
+    <div style={flex.container}>
 
-        <div style={style.imgFlex}> <img src={props.photo.url} alt={props.photo.title} /> </div>
+        <div style={flex.imgColumn}> <img src={props.photo.url} alt={props.photo.title} /> </div>
 
-        <div style={style.explanationFlex}>
-            <h1 style={style.titleWrapper}>{props.photo.title}</h1>
+        <div style={flex.explanationColumn}>
+            <h1 style={flex.titleWrapper}>{props.photo.title}</h1>
             <p>{props.photo.explanation}</p>
         </div>
 
@@ -15,8 +15,7 @@ const Photo = props => (<div>
 </div>);
 
 
-const style = {
-
+const flex = {
     container: {
         padding: 3,
         margin: '0 auto',
@@ -28,10 +27,10 @@ const style = {
 
     titleWrapper: {
         textAlign: 'center',
-        color: '#a5b0b9',
+        color: '#fff',
     },
 
-    imgFlex: {
+    imgColumn: {
         margin: 0,
         height: '40%',
         width: '40%',
@@ -40,7 +39,7 @@ const style = {
 
     },
 
-    explanationFlex: {
+    explanationColumn: {
         maxWidth: '50%',
         lineHeight: 1.4,
         fontSize: 20,

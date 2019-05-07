@@ -1,15 +1,6 @@
-import React from "react";
-import Button from "./Button";
+import styled from 'styled-components';
 
-const DateForm = props => (
-
-    <form onSubmit={props.changeDate}>
-        <input type="date" />
-        <Button>Submit</Button>
-    </form>
-
-);
+export default styled.form`
 
 
-
-export default DateForm;
+`
