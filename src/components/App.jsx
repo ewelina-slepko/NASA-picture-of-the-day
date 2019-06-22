@@ -24,11 +24,8 @@ class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <header>
-                    <div><img src={NASApicture} /></div>
-                    <h1>NASA - Picture of the day!</h1>
-                </header>
-
+                <img src={NASApicture} />
+                <h1>NASA - Picture of the day!</h1>
                 <Date changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
             </div>

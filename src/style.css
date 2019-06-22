@@ -54,8 +54,16 @@ body {
   text-transform: uppercase;
 }
 
-.container img{
-  display: flex;
+.imgWrapper{
+  background-color: black;
+}
+
+img{
+  max-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+  margin: 0
 }
 
 .wrapper h2{
