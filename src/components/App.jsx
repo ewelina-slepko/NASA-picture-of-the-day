@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Date from "./Date";
 import Photo from "./Photo";
 
-
 class App extends React.Component {
     state = {
         date: "",
@@ -23,7 +22,8 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
+                <h1>NASA - Picture of the day!</h1>
                 <Date changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
             </div>
