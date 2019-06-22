@@ -54,6 +54,10 @@ body {
   text-transform: uppercase;
 }
 
+.container img{
+  display: flex;
+}
+
 .wrapper h2{
   text-align: center;
   text-transform: uppercase;

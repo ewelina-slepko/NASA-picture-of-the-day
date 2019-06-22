@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Date from "./Date";
 import Photo from "./Photo";
+import NASApicture from "../images/NASApicture.jpg"
 
 class App extends React.Component {
     state = {
@@ -23,7 +24,11 @@ class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>NASA - Picture of the day!</h1>
+                <header>
+                    <div><img src={NASApicture} /></div>
+                    <h1>NASA - Picture of the day!</h1>
+                </header>
+
                 <Date changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
             </div>
@@ -32,7 +37,7 @@ class App extends React.Component {
 
     changeDate = e => {
         e.preventDefault();
-        let inputDate = e.target[0].value;
+        const inputDate = e.target[0].value;
         this.setState({ date: inputDate })
         this.getPhoto(inputDate);
     }

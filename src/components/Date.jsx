@@ -1,8 +1,8 @@
 import React from "react";
 
-const DateForm = props => (
+const DateForm = ({ changeDate }) => (
     <div>
-        <form onSubmit={props.changeDate}>
+        <form onSubmit={changeDate}>
             <input type="date" />
             <button>Submit</button>
         </form>
