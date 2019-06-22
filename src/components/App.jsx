@@ -23,12 +23,14 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <img src={NASApicture} />
-                <h1>NASA - Picture of the day!</h1>
+            <>
+                <div className="container">
+                    <img className="headerImg" src={NASApicture} />
+                    <h1>Picture of the day</h1>
+                </div>
                 <Date changeDate={this.changeDate} />
                 <Photo photo={this.state.photo} />
-            </div>
+            </>
         );
     }
 
