@@ -25,7 +25,7 @@ class App extends React.Component {
         return (
             <>
                 <div className="container">
-                    <img className="headerImg" src={logo} />
+                    <img className="headerImg" src={logo} data-aos="flip-up" data-aos-duration="1000" />
                     <h1>Picture of the day</h1>
                 </div>
                 <Date changeDate={this.changeDate} />
