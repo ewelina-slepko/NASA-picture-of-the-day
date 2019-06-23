@@ -1,7 +1,7 @@
 import React from "react";
 
 const DateForm = ({ changeDate }) => (
-    <div>
+    <div className="dateWrapper">
         <form onSubmit={changeDate}>
             <input type="date" />
             <button>Submit</button>
