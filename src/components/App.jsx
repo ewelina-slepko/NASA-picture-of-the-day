@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Date from "./Date";
 import Photo from "./Photo";
-import NASApicture from "../images/NASApicture.jpg"
+import logo from "../images/logo.png"
 
 class App extends React.Component {
     state = {
@@ -25,7 +25,7 @@ class App extends React.Component {
         return (
             <>
                 <div className="container">
-                    <img className="headerImg" src={NASApicture} />
+                    <img className="headerImg" src={logo} />
                     <h1>Picture of the day</h1>
                 </div>
                 <Date changeDate={this.changeDate} />
