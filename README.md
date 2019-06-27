@@ -9,7 +9,7 @@
 * [Contact](#contact)
 
 ## General info
-Small application using NASA API - including astronomical photos.
+Simple application using NASA API - including astronomical photos.
 
 ## Technologies
 * HTML5
