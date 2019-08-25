@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Date from "./Date";
-import Photo from "./Photo";
+import Date from "./Date"
+import Photo from "./Photo"
+import Footer from "./Footer"
 import logo from "../images/logo.png"
 
 class App extends React.Component {
@@ -20,7 +21,6 @@ class App extends React.Component {
             .then(json => this.setState({ photo: json }));
     }
 
-
     render() {
         return (
             <>
@@ -28,8 +28,11 @@ class App extends React.Component {
                     <img className="headerImg" src={logo} data-aos="flip-up" data-aos-duration="1000" />
                     <h1>Picture of the day</h1>
                 </div>
-                <Date changeDate={this.changeDate} />
-                <Photo photo={this.state.photo} />
+                <div className="infoWrapper">
+                    <Date changeDate={this.changeDate} />
+                    <Photo photo={this.state.photo} />
+                </div>
+                <Footer />
             </>
         );
     }

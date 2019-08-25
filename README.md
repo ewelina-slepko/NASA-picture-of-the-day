@@ -15,6 +15,7 @@ Small application using NASA API - including astronomical photos.
 * HTML5
 * CSS
 * React JS
+* Webpack
 * API
 * Firebase
 * PWA
