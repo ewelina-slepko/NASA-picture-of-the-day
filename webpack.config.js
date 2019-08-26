@@ -5,6 +5,7 @@ const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const PUBLIC_PATH = 'https://nasa-get-the-photo.firebaseapp.com/';
 
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -56,6 +57,10 @@ module.exports = {
                 'style-loader',
                 'css-loader'
             ]
+        },
+        {
+            test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+            loader: 'file-loader?name=icon.[ext]'
         },
         ]
     },
