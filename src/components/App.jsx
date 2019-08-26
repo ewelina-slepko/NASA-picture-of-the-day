@@ -3,7 +3,6 @@ import Date from "./Date"
 import Photo from "./Photo"
 import Footer from "./Footer"
 import logo from "../images/logo.png"
-require('../icon.png')
 
 class App extends React.Component {
     state = {
