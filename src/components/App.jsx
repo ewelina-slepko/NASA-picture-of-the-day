@@ -4,6 +4,7 @@ import Photo from "./Photo"
 import Footer from "./Footer"
 import logo from "../images/logo.png"
 
+
 class App extends React.Component {
     state = {
         date: "",
